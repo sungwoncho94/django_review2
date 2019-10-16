@@ -6,3 +6,7 @@ class Article(models.Model):
     content = models.TextField()  # 뒤 괄호() 필수
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+
+    class Meta:
+        ordering = ('-pk', )

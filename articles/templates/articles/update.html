@@ -8,7 +8,7 @@
 <form method="post">
   {% csrf_token %}
   {{ form.as_p }}
-  <button type="submit">생성하기</button>
+  <button type="submit">수정하기</button>
   <a href="{% url 'articles:index' %}">[목록]</a>
 </form>
 {% endblock container %}
